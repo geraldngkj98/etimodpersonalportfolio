@@ -7,7 +7,7 @@ import time
 driver = webdriver.Chrome()
 driver.maximize_window()
 
-def test_changeWrongPswd():
+def test_emptyCatSubmit():
     driver.get('http://localhost:8000/admin/login/')
     userelem = driver.find_element_by_name("username")
     userelem.clear()
