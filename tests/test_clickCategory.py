@@ -7,6 +7,6 @@ driver = webdriver.Chrome()
 driver.maximize_window()
 
 def test_clickCategory():
-    driver.get('http://localhost:8000/blog/2/')
-    elem = driver.find_element_by_name("category")
-    elem.click()          
+    driver.get('http://localhost:8000/blog/')
+    driver.find_element_by_xpath('//a[@href="'+"/blog/CCA/"+'"]').click()
+    driver.quit()

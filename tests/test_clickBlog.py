@@ -6,7 +6,8 @@ from selenium.webdriver.common.keys import Keys
 driver = webdriver.Chrome()
 driver.maximize_window()
 
-def test_clickReadMore():
+def test_clickBlog():
     driver.get('http://localhost:8000/projects/')
-    elem = driver.find_element_by_name("test")
+    elem = driver.find_element_by_name("blog")
     elem.click()
+    driver.quit()

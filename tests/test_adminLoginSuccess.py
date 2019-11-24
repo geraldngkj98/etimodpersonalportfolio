@@ -17,3 +17,4 @@ def test_adminLogin():
     pswdelem.send_keys("27D29r98")
     pswdelem.send_keys(Keys.RETURN)
 
+    driver.quit()
